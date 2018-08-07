@@ -143,6 +143,14 @@ void loop() {
     }
   } else {
     Serial.println("No reply, is another RFM69 listening?");
+    tft.setRotation(1);
+    tft.drawChar( 41, 43, 'H', 0x3fe5, 0x0000,3);
+    tft.drawChar( 61, 43, '4', 0xf8ed, 0x0000,3);
+    tft.drawChar( 82, 43, 'c', 0x3fe5, 0x0000,3);
+    tft.drawChar( 103, 43, 'k', 0x3fe5, 0x0000,3);
+    tft.drawChar( 61, 70, 'M', 0x3fe5, 0x0000,3);
+    tft.drawChar( 82, 70, '3', 0xf8ed, 0x0000,3);
+    delay(2000);
   }
 
   //Screen  
